@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran</title>
+</head>
+<body>
+  <header>
+    <center>
+      <h1>📝 Form Pendaftaran</h1>
+      <nav>
+        <a href="index.html">🏠 Blog</a> |
+        <a href="detail.html">📖 Detail Blog</a> |
+        <a href="form.html">📝 Form Pendaftaran</a> |
+        <a href="nilai.html">📊 Tabel Nilai</a> |
+        <a href="cv.html">👤 Curriculum Vitae</a>
+      </nav>
+    </center>
+    <hr>
+  </header>
+
+  <main>
+    <center>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Data Pribadi</legend>
+          <p>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required autofocus>
+          </p>
+          <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jk" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+          </p>
+          <p>
+            <label for="tempat">Tempat Lahir:</label><br>
+            <input type="text" id="tempat" name="tempat" placeholder="Kota/Kabupaten" required>
+          </p>
+          <p>
+            <label for="tanggal">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hobi</legend>
+          <p>
+            <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" id="musik" name="hobi" value="Musik">
+            <label for="musik">Musik</label>
+            <input type="checkbox" id="traveling" name="hobi" value="Traveling">
+            <label for="traveling">Traveling</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Keamanan</legend>
+          <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="6" placeholder="Minimal 6 karakter" required>
+          </p>
+          <p>
+            <input type="checkbox" id="setuju" name="setuju" required>
+            <label for="setuju">Saya menyetujui <mark>syarat dan ketentuan</mark></label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="reset" value="🔄 Reset">
+          <input type="submit" value="✅ Submit">
+        </p>
+      </form>
+    </center>
+  </main>
+
+  <footer>
+    <hr>
+    <center>
+      <p><small>&copy; <time datetime="2025">2025</time> Daniel Simamora | Form Pendaftaran </small></p>
+    </center>
+  </footer>
+</body>
+</html>
